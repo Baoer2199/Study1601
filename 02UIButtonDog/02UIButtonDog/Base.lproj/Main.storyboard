@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="RT3-h3-pNT" userLabel="dogHead">
+                                <rect key="frame" x="91" y="45" width="154" height="134"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="点我试试" backgroundImage="dog1.png">
+                                    <color key="titleColor" red="0.19894088808111221" green="0.1798897950240016" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Fbb-ja-qH1">
+                                <rect key="frame" x="64" y="295" width="43" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="top_disable.png"/>
+                                <connections>
+                                    <action selector="Move:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qX9-yJ-3X0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gAr-eb-kwV">
+                                <rect key="frame" x="14" y="333" width="50" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="left_disable.png"/>
+                                <connections>
+                                    <action selector="Move:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qfn-oy-k4f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="30" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zgf-TP-wQp">
+                                <rect key="frame" x="66" y="364" width="41" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bottom_disable.png"/>
+                                <connections>
+                                    <action selector="Move:" destination="BYZ-38-t0r" eventType="touchUpInside" id="scU-k3-z7I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="40" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Lhd-NG-Aqh">
+                                <rect key="frame" x="115" y="329" width="41" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="right_disable.png"/>
+                                <connections>
+                                    <action selector="Move:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rpb-6B-e5w"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="70" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="agA-AI-Ezn">
+                                <rect key="frame" x="213" y="437" width="43" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="right_rotate_normal.png"/>
+                                <connections>
+                                    <action selector="xuanZhuanAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FgH-Pa-iiP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="60" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jKy-Gu-JBS">
+                                <rect key="frame" x="309" y="304" width="41" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="minus_normal.png"/>
+                                <connections>
+                                    <action selector="scaleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0bh-0A-y2E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="80" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="FW1-ZG-VkP">
+                                <rect key="frame" x="277" y="445" width="39" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="left_rotate_normal.png"/>
+                                <connections>
+                                    <action selector="xuanZhuanAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8K8-fI-CaY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="50" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="sAH-UQ-wdQ">
+                                <rect key="frame" x="305" y="244" width="49" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="plus_normal.png"/>
+                                <connections>
+                                    <action selector="scaleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="arI-yI-Qcd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="headBtn" destination="RT3-h3-pNT" id="Yk6-so-vBq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="149.06666666666666" y="297.72666666666669"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bottom_disable.png" width="96" height="96"/>
+        <image name="dog1.png" width="300" height="300"/>
+        <image name="left_disable.png" width="96" height="96"/>
+        <image name="left_rotate_normal.png" width="96" height="96"/>
+        <image name="minus_normal.png" width="96" height="96"/>
+        <image name="plus_normal.png" width="96" height="96"/>
+        <image name="right_disable.png" width="96" height="96"/>
+        <image name="right_rotate_normal.png" width="96" height="96"/>
+        <image name="top_disable.png" width="96" height="96"/>
+    </resources>
+</document>
